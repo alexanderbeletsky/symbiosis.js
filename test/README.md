@@ -98,3 +98,16 @@ it('should be called before boo()', function() {
 // etc.
 ```
 
+## Test folder structure
+
+We have two folders, [/spec](/test/spec) and [/unit](/test/unit). First dedicated more to `integration` tests (whole system tests), second for unit tests.
+
+## How to run tests
+
+At the moment we have `karma` as test runner. To start,
+
+```bash
+> karma start
+```
+
+and `karma` would execute in continuous mode. Just edit sources or tests, they will be re-launched automatically.
