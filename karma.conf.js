@@ -27,7 +27,7 @@ module.exports = function(config) {
 
     // list of files to exclude
     exclude: [
-      
+
     ],
 
     traceurPreprocessor: {
@@ -35,6 +35,7 @@ module.exports = function(config) {
         sourceMap: true,
         modules: 'requirejs',
         annotations: true,
+        experimental: true,
         types: true
       }
     },

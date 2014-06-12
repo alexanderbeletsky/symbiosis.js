@@ -28,6 +28,7 @@ gulp.task('build_source_amd', function () {
       modules: 'amd',
       types: true,
       annotations: true,
+      experimental: true,
       typeAssertions: true,
       typeAssertionModule: 'assert'
     }))
