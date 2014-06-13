@@ -3,13 +3,11 @@
 
 import {Symbiosis} from '../../src/symbiosis.js';
 
-describe('ORM', function () {
+describe('Symbiosis', function () {
   describe('Property', function () {
 
     it('should be defined', function () {
       expect(Symbiosis.Property).toBeDefined();
     });
-
   });
-
 });
