@@ -28,13 +28,13 @@ Written in ES6 (also transpiled into ES5 Common JS and AMD modules).
 * [Features](#features)
 * [Roadmap](#roadmap)
 * [Installation](#installation)
-* [Model](src/model/README.md) - domain logic, collection of properties
-* [Properties](src/property/README.md) - serialization logic
-* [Associations](src/property/README.md#associations) - special properties to handle associations
-* [Validation](src/validation/README.md) - validation of properties
-* [Adapter](src/validation/README.md) - (VERY unstable) business logic and driver interaction,
-* [Driver](src/driver/README.md) - (VERY unstable) resource wrapper
-* [CacheProvider](src/cacheprovider/README.md) - (VERY unstable) cache handling
+* [Model](src/model) - domain logic, collection of properties
+* [Properties](src/property) - serialization logic
+* [Associations](src/property#associations) - special properties to handle associations
+* [Validation](src/validation) - validation of properties
+* [Adapter](src/validation) - (VERY unstable) business logic and driver interaction,
+* [Driver](src/driver) - (VERY unstable) resource wrapper
+* [CacheProvider](src/cacheprovider) - (VERY unstable) cache handling
 
 For adapters and down to drivers and cacheproviders it is worth considering [Orbit.js](https://github.com/orbitjs/orbit.js) before implementing.
 
