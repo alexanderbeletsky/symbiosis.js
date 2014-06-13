@@ -4,7 +4,10 @@
 import {Symbiosis} from '../../src/symbiosis.js';
 
 describe('Symbiosis', function () {
-  it('should be defined', function () {
-    expect(Symbiosis).toBeDefined();
+  describe('Property', function () {
+
+    it('should be defined', function () {
+      expect(Symbiosis.Property).toBeDefined();
+    });
   });
 });
