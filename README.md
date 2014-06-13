@@ -94,8 +94,8 @@ npm install -g gulp
 ### Development and building
 The project should make use of traceur to make use of ES6 modules, classes and generators.
 
-### Running the [tests](./test/unit)
-This will start Karma and Chrome (with `--harmony` enabled). Karma will watch the source code and run the tests anytime you save a change.
+### Running the tests
+This will start Karma and Chrome (with `--harmony` enabled). Karma will watch the source code and run the tests anytime you save a change Read more about the testing practices [here](./test)
 
 ```bash
 karma start
