@@ -1,7 +1,7 @@
 /* global describe, it, expect */
 'use strict';
 
-import {Symbiosis} from '../../../src/symbiosis.js';
+import {Symbiosis} from '../../src/symbiosis.js';
 
 describe('Symbiosis', function () {
   describe('Model', function () {

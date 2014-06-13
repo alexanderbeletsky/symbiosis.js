@@ -1,6 +1,6 @@
 /* global describe, it, expect */
 
-import {Module} from '../../../src/core/module.js';
+import {Module} from '../../src/core/module.js';
 
 describe('Symbiosis', function () {
   describe('Core', function () {
