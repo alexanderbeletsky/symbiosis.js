@@ -7,5 +7,5 @@ import {Adapter} from './base/adapter.js';
 export var AdapterFactory = function (adapterDefinition) {
   //TODO: Extend and configure BaseAdapter and return configured instance
   //Factory is responsible for getting all dependencies and preparing them (Adapter etc)
-  return new BaseAdapter();
+  return new Adapter(adapterDefinition);
 };

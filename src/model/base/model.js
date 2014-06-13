@@ -1,36 +1,3 @@
-//Static methods!?
-export class Model {
-
-  constructor(definition, adapter) {
-    //Register instances adapter, properties etc.
-    this._definition = definition;
-  }
-
-  create(data) {
-    return new Instance(data, this);
-  }
-
-  fields() {
-    return this._definition.fields;
-  }
-
-  computedFields() {
-    return this._definition.computedFields || {};
-  }
-
-  serializationHandlers() {
-    return this._definition.serializationHandlers || {};
-  }
-
-  //TODO: Person.get(ID);
-  //TODO: Person.find({name: 'Something'});
-  // Returns promise that eventually should resolve into a person with proxies to the persons friends and projects
-  // (or the populated data if it already is fetched somewhere else in the application
-  //TODO: Person.find(/*...*/).populate('friends', 'projects');
-  // Returns promise that eventually resolves into a person with its associated friends and projects populated
-
-}
-
 class Instance {
 
   constructor(data, context) {
@@ -124,4 +91,38 @@ class Instance {
 
     return ownField || computedField;
   }
+}
+
+//Static methods!?
+export class Model {
+
+  constructor(definition, adapter) {
+    //Register instances adapter, properties etc.
+    this._definition = definition;
+    this._adapter = adapter;
+  }
+
+  create(data) {
+    return new Instance(data, this);
+  }
+
+  fields() {
+    return this._definition.fields;
+  }
+
+  computedFields() {
+    return this._definition.computedFields || {};
+  }
+
+  serializationHandlers() {
+    return this._definition.serializationHandlers || {};
+  }
+
+  //TODO: Person.get(ID);
+  //TODO: Person.find({name: 'Something'});
+  // Returns promise that eventually should resolve into a person with proxies to the persons friends and projects
+  // (or the populated data if it already is fetched somewhere else in the application
+  //TODO: Person.find(/*...*/).populate('friends', 'projects');
+  // Returns promise that eventually resolves into a person with its associated friends and projects populated
+
 }

@@ -6,7 +6,8 @@ export class Module {
   }
 
   define (name, definitionObject) {
-    return this._definitions[name] = this.factory(definitionObject);
+    var definition = this._definitions[name] = this.factory(definitionObject);
+    return definition;
   }
 
   get (name) {

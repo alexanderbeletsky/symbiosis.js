@@ -7,5 +7,5 @@ import {Validation} from './base/validation.js';
 export var ValidationFactory = function (validationDefinition) {
   //TODO: Extend and configure BaseValidation and return configured instance
   //Factory is responsible for getting all dependencies and preparing them (validation etc)
-  return new Validation();
+  return new Validation(validationDefinition);
 };

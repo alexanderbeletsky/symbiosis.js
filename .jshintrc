@@ -1,5 +1,5 @@
 {
-  "predef": {
+  "predef": [
     "describe",
     "beforeEach",
     "afterEach",
@@ -7,8 +7,7 @@
     "after",
     "it",
     "expect"
-  },
-  "node": true,
+  ],
   "esnext": true,
   "bitwise": true,
   "camelcase": true,
@@ -23,7 +22,6 @@
   "regexp": true,
   "undef": true,
   "unused": true,
-  "strict": true,
   "trailing": true,
   "smarttabs": true,
   "white": true
