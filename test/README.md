@@ -1,6 +1,6 @@
 # Symbiosis.js Tests
 
-This project embrace practices of TDD (test driven development), following few very simple principles:
+This project embraces practices of TDD (test driven development), following few very simple principles:
 
 * No line of production code without test
 * No bugfix without test proves it
@@ -13,6 +13,16 @@ Unit test is the one that focus on one small piece of functionality and able to 
 Integration test is, in other hand, tests object collaboration without mocking external dependencies.
 
 Good test coverage is a combination of unit tests (fast) and integration tests (slow).
+
+## Red, Green, Refactor
+
+So called TDD "mantra" is number of simple steps that are used during development:
+
+1. Write test on non-existing behavior. Test here is a hypotheses of how thing should work. It never can pass, so it should remain in RED state.
+2. Turn hypotheses to fact, but implementing it. You should not focus on code quality, re-usage or other aspects, the goal is to make things work. Test should become GREEN after.
+3. As soon as GREEN state archived, the code should be refactored (if needed).
+
+Those 3 steps concludes TDD cycle, next cycle should start after.
 
 ## Safety net
 
@@ -97,6 +107,14 @@ it('should be called before boo()', function() {
 
 // etc.
 ```
+
+## Bugfixes
+
+TDD way of bugfixing is the following:
+
+* Reproduce the bug
+* Write RED test that would prove the wrong behavior
+* Fix the code to get GREEN state
 
 ## Test folder structure
 
